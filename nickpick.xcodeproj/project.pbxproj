@@ -16,6 +16,12 @@
 		AE5082351DE611EE00CAD295 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5082341DE611EE00CAD295 /* ProductListViewController.swift */; };
 		AE5082371DE6121600CAD295 /* ProductDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5082361DE6121600CAD295 /* ProductDescriptionViewController.swift */; };
 		AE50823A1DE6184A00CAD295 /* Stylesheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5082391DE6184A00CAD295 /* Stylesheet.swift */; };
+		AE50823C1DE61F4700CAD295 /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE50823B1DE61F4700CAD295 /* ProductListViewModel.swift */; };
+		AE50823F1DE61F7200CAD295 /* ProductListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE50823D1DE61F7200CAD295 /* ProductListCollectionViewCell.swift */; };
+		AE5082401DE61F7200CAD295 /* ProductListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE50823E1DE61F7200CAD295 /* ProductListCollectionViewCell.xib */; };
+		AE5082431DE6203900CAD295 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5082421DE6203900CAD295 /* Product.swift */; };
+		AE5082461DE62D6100CAD295 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5082451DE62D6100CAD295 /* ProductService.swift */; };
+		AE5082481DE63FDA00CAD295 /* ProductListCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5082471DE63FDA00CAD295 /* ProductListCollectionViewFlowLayout.swift */; };
 		C7A30BA29451F53F9ED86114 /* Pods_nickpick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4307F9069749F9764CADB6 /* Pods_nickpick.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +61,12 @@
 		AE5082341DE611EE00CAD295 /* ProductListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductListViewController.swift; path = "Product list/ProductListViewController.swift"; sourceTree = "<group>"; };
 		AE5082361DE6121600CAD295 /* ProductDescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductDescriptionViewController.swift; path = "Product description/ProductDescriptionViewController.swift"; sourceTree = "<group>"; };
 		AE5082391DE6184A00CAD295 /* Stylesheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stylesheet.swift; sourceTree = "<group>"; };
+		AE50823B1DE61F4700CAD295 /* ProductListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductListViewModel.swift; path = "Product list/ProductListViewModel.swift"; sourceTree = "<group>"; };
+		AE50823D1DE61F7200CAD295 /* ProductListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductListCollectionViewCell.swift; path = "Product list/ProductListCollectionViewCell.swift"; sourceTree = "<group>"; };
+		AE50823E1DE61F7200CAD295 /* ProductListCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProductListCollectionViewCell.xib; path = "Product list/ProductListCollectionViewCell.xib"; sourceTree = "<group>"; };
+		AE5082421DE6203900CAD295 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Product.swift; path = Model/Product.swift; sourceTree = "<group>"; };
+		AE5082451DE62D6100CAD295 /* ProductService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductService.swift; path = Service/ProductService.swift; sourceTree = "<group>"; };
+		AE5082471DE63FDA00CAD295 /* ProductListCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductListCollectionViewFlowLayout.swift; path = "Product list/ProductListCollectionViewFlowLayout.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +137,8 @@
 		AE5082031DE5F50400CAD295 /* nickpick */ = {
 			isa = PBXGroup;
 			children = (
+				AE5082441DE62D3000CAD295 /* Service */,
+				AE5082411DE6201F00CAD295 /* Model */,
 				AE5082381DE6183800CAD295 /* Helpers */,
 				AE5082331DE611BC00CAD295 /* Product description */,
 				AE5082321DE611B400CAD295 /* Product list */,
@@ -159,6 +173,10 @@
 			isa = PBXGroup;
 			children = (
 				AE5082341DE611EE00CAD295 /* ProductListViewController.swift */,
+				AE50823B1DE61F4700CAD295 /* ProductListViewModel.swift */,
+				AE50823D1DE61F7200CAD295 /* ProductListCollectionViewCell.swift */,
+				AE50823E1DE61F7200CAD295 /* ProductListCollectionViewCell.xib */,
+				AE5082471DE63FDA00CAD295 /* ProductListCollectionViewFlowLayout.swift */,
 			);
 			name = "Product list";
 			sourceTree = "<group>";
@@ -177,6 +195,22 @@
 				AE5082391DE6184A00CAD295 /* Stylesheet.swift */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		AE5082411DE6201F00CAD295 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AE5082421DE6203900CAD295 /* Product.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		AE5082441DE62D3000CAD295 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				AE5082451DE62D6100CAD295 /* ProductService.swift */,
+			);
+			name = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,6 +326,7 @@
 			files = (
 				AE50820F1DE5F50400CAD295 /* LaunchScreen.storyboard in Resources */,
 				AE50820C1DE5F50400CAD295 /* Assets.xcassets in Resources */,
+				AE5082401DE61F7200CAD295 /* ProductListCollectionViewCell.xib in Resources */,
 				AE50820A1DE5F50400CAD295 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,10 +400,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE5082481DE63FDA00CAD295 /* ProductListCollectionViewFlowLayout.swift in Sources */,
 				AE5082351DE611EE00CAD295 /* ProductListViewController.swift in Sources */,
+				AE5082461DE62D6100CAD295 /* ProductService.swift in Sources */,
+				AE50823C1DE61F4700CAD295 /* ProductListViewModel.swift in Sources */,
 				AE50823A1DE6184A00CAD295 /* Stylesheet.swift in Sources */,
 				AE5082371DE6121600CAD295 /* ProductDescriptionViewController.swift in Sources */,
+				AE50823F1DE61F7200CAD295 /* ProductListCollectionViewCell.swift in Sources */,
 				AE5082051DE5F50400CAD295 /* AppDelegate.swift in Sources */,
+				AE5082431DE6203900CAD295 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

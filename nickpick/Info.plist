@@ -34,5 +34,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>RestServiceEndpoint</key>
+	<string>https://s3-eu-west-1.amazonaws.com/developer-application-test/</string>
 </dict>
 </plist>

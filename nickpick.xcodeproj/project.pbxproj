@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		AE5082051DE5F50400CAD295 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5082041DE5F50400CAD295 /* AppDelegate.swift */; };
-		AE5082071DE5F50400CAD295 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5082061DE5F50400CAD295 /* ViewController.swift */; };
 		AE50820A1DE5F50400CAD295 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE5082081DE5F50400CAD295 /* Main.storyboard */; };
 		AE50820C1DE5F50400CAD295 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE50820B1DE5F50400CAD295 /* Assets.xcassets */; };
 		AE50820F1DE5F50400CAD295 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE50820D1DE5F50400CAD295 /* LaunchScreen.storyboard */; };
 		AE50821A1DE5F50400CAD295 /* nickpickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5082191DE5F50400CAD295 /* nickpickTests.swift */; };
 		AE5082251DE5F50400CAD295 /* nickpickUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5082241DE5F50400CAD295 /* nickpickUITests.swift */; };
+		AE5082351DE611EE00CAD295 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5082341DE611EE00CAD295 /* ProductListViewController.swift */; };
+		AE5082371DE6121600CAD295 /* ProductDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5082361DE6121600CAD295 /* ProductDescriptionViewController.swift */; };
+		AE50823A1DE6184A00CAD295 /* Stylesheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5082391DE6184A00CAD295 /* Stylesheet.swift */; };
 		C7A30BA29451F53F9ED86114 /* Pods_nickpick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4307F9069749F9764CADB6 /* Pods_nickpick.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +42,6 @@
 		5F4307F9069749F9764CADB6 /* Pods_nickpick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nickpick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5082011DE5F50400CAD295 /* nickpick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nickpick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5082041DE5F50400CAD295 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AE5082061DE5F50400CAD295 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AE5082091DE5F50400CAD295 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE50820B1DE5F50400CAD295 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE50820E1DE5F50400CAD295 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +52,9 @@
 		AE5082201DE5F50400CAD295 /* nickpickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nickpickUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5082241DE5F50400CAD295 /* nickpickUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nickpickUITests.swift; sourceTree = "<group>"; };
 		AE5082261DE5F50400CAD295 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE5082341DE611EE00CAD295 /* ProductListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductListViewController.swift; path = "Product list/ProductListViewController.swift"; sourceTree = "<group>"; };
+		AE5082361DE6121600CAD295 /* ProductDescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductDescriptionViewController.swift; path = "Product description/ProductDescriptionViewController.swift"; sourceTree = "<group>"; };
+		AE5082391DE6184A00CAD295 /* Stylesheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stylesheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,8 +125,10 @@
 		AE5082031DE5F50400CAD295 /* nickpick */ = {
 			isa = PBXGroup;
 			children = (
+				AE5082381DE6183800CAD295 /* Helpers */,
+				AE5082331DE611BC00CAD295 /* Product description */,
+				AE5082321DE611B400CAD295 /* Product list */,
 				AE5082041DE5F50400CAD295 /* AppDelegate.swift */,
-				AE5082061DE5F50400CAD295 /* ViewController.swift */,
 				AE5082081DE5F50400CAD295 /* Main.storyboard */,
 				AE50820B1DE5F50400CAD295 /* Assets.xcassets */,
 				AE50820D1DE5F50400CAD295 /* LaunchScreen.storyboard */,
@@ -147,6 +153,30 @@
 				AE5082261DE5F50400CAD295 /* Info.plist */,
 			);
 			path = nickpickUITests;
+			sourceTree = "<group>";
+		};
+		AE5082321DE611B400CAD295 /* Product list */ = {
+			isa = PBXGroup;
+			children = (
+				AE5082341DE611EE00CAD295 /* ProductListViewController.swift */,
+			);
+			name = "Product list";
+			sourceTree = "<group>";
+		};
+		AE5082331DE611BC00CAD295 /* Product description */ = {
+			isa = PBXGroup;
+			children = (
+				AE5082361DE6121600CAD295 /* ProductDescriptionViewController.swift */,
+			);
+			name = "Product description";
+			sourceTree = "<group>";
+		};
+		AE5082381DE6183800CAD295 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AE5082391DE6184A00CAD295 /* Stylesheet.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,7 +365,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE5082071DE5F50400CAD295 /* ViewController.swift in Sources */,
+				AE5082351DE611EE00CAD295 /* ProductListViewController.swift in Sources */,
+				AE50823A1DE6184A00CAD295 /* Stylesheet.swift in Sources */,
+				AE5082371DE6121600CAD295 /* ProductDescriptionViewController.swift in Sources */,
 				AE5082051DE5F50400CAD295 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -583,6 +615,7 @@
 				AE50822B1DE5F50400CAD295 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE50822C1DE5F50400CAD295 /* Build configuration list for PBXNativeTarget "nickpickTests" */ = {
 			isa = XCConfigurationList;
@@ -591,6 +624,7 @@
 				AE50822E1DE5F50400CAD295 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE50822F1DE5F50400CAD295 /* Build configuration list for PBXNativeTarget "nickpickUITests" */ = {
 			isa = XCConfigurationList;
@@ -599,6 +633,7 @@
 				AE5082311DE5F50400CAD295 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

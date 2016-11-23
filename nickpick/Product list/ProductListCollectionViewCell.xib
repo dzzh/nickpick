@@ -52,16 +52,56 @@
                                 <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ttw-6z-b4K" userLabel="border top">
+                                <rect key="frame" x="0.0" y="0.0" width="291" height="1"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="U9S-gK-qZ2"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2mJ-2K-kYg" userLabel="border left">
+                                <rect key="frame" x="0.0" y="0.0" width="1" height="406"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="rfs-n8-LXQ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RCi-oo-CAv" userLabel="border right">
+                                <rect key="frame" x="290" y="0.0" width="1" height="406"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="F5q-JK-kT9"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rof-rd-ub0" userLabel="border bottom">
+                                <rect key="frame" x="0.0" y="405" width="291" height="1"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="R40-3x-lib"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="RCi-oo-CAv" firstAttribute="top" secondItem="PTe-po-uDV" secondAttribute="top" id="0hy-1n-px5"/>
+                            <constraint firstAttribute="bottom" secondItem="2mJ-2K-kYg" secondAttribute="bottom" id="11Z-ct-N2y"/>
                             <constraint firstItem="ldp-ag-F2P" firstAttribute="top" secondItem="9qj-nQ-jD9" secondAttribute="bottom" constant="10" id="5ap-K9-emy"/>
+                            <constraint firstItem="Rof-rd-ub0" firstAttribute="leading" secondItem="PTe-po-uDV" secondAttribute="leading" id="7LX-F8-QOh"/>
                             <constraint firstItem="ldp-ag-F2P" firstAttribute="leading" secondItem="9qj-nQ-jD9" secondAttribute="leading" id="9LO-bp-PSk"/>
+                            <constraint firstItem="Ttw-6z-b4K" firstAttribute="leading" secondItem="PTe-po-uDV" secondAttribute="leading" id="CDX-Fl-La2"/>
+                            <constraint firstAttribute="bottom" secondItem="Rof-rd-ub0" secondAttribute="bottom" id="Onm-t1-WWz"/>
                             <constraint firstItem="9qj-nQ-jD9" firstAttribute="leading" secondItem="PTe-po-uDV" secondAttribute="leading" constant="5" id="U9S-LF-3q4"/>
                             <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Dbo-Qx-teu" secondAttribute="bottom" constant="10" id="VMn-OQ-YH5"/>
+                            <constraint firstAttribute="bottom" secondItem="RCi-oo-CAv" secondAttribute="bottom" id="a6J-Kw-I8c"/>
                             <constraint firstItem="9qj-nQ-jD9" firstAttribute="top" secondItem="PTe-po-uDV" secondAttribute="top" constant="5" id="btd-dR-een"/>
+                            <constraint firstItem="2mJ-2K-kYg" firstAttribute="top" secondItem="PTe-po-uDV" secondAttribute="top" id="bvA-f7-CTn"/>
                             <constraint firstItem="Dbo-Qx-teu" firstAttribute="top" secondItem="ldp-ag-F2P" secondAttribute="bottom" constant="10" id="clp-Yg-hHF"/>
                             <constraint firstItem="Dbo-Qx-teu" firstAttribute="leading" secondItem="9qj-nQ-jD9" secondAttribute="leading" id="cvr-R2-Fni"/>
+                            <constraint firstAttribute="trailing" secondItem="Rof-rd-ub0" secondAttribute="trailing" id="diQ-Jw-piP"/>
+                            <constraint firstAttribute="trailing" secondItem="Ttw-6z-b4K" secondAttribute="trailing" id="h3s-W0-Brz"/>
+                            <constraint firstAttribute="trailing" secondItem="RCi-oo-CAv" secondAttribute="trailing" id="kWd-bq-Ehu"/>
+                            <constraint firstItem="2mJ-2K-kYg" firstAttribute="leading" secondItem="PTe-po-uDV" secondAttribute="leading" id="lBC-67-I8B"/>
+                            <constraint firstItem="Ttw-6z-b4K" firstAttribute="top" secondItem="PTe-po-uDV" secondAttribute="top" id="rKd-yz-E6K"/>
                             <constraint firstItem="Dbo-Qx-teu" firstAttribute="trailing" secondItem="9qj-nQ-jD9" secondAttribute="trailing" id="uh5-rO-4CH"/>
                             <constraint firstAttribute="trailing" secondItem="9qj-nQ-jD9" secondAttribute="trailing" constant="5" id="whZ-2z-eBq"/>
                             <constraint firstItem="ldp-ag-F2P" firstAttribute="trailing" secondItem="9qj-nQ-jD9" secondAttribute="trailing" id="yOU-8d-Aiw"/>

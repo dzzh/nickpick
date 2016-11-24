@@ -45,7 +45,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0LP-so-9In">
-                                <rect key="frame" x="10" y="0.0" width="355" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Eyp-2g-Dbu" customClass="ProductListCollectionViewFlowLayout" customModule="nickpick" customModuleProvider="target">
                                     <size key="itemSize" width="172" height="220"/>
@@ -66,7 +66,7 @@
                                         </connections>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="1ER-7M-20X">
-                                        <rect key="frame" x="183" y="0.0" width="172" height="220"/>
+                                        <rect key="frame" x="203" y="0.0" width="172" height="220"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="172" height="220"/>
@@ -86,10 +86,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="0LP-so-9In" firstAttribute="top" secondItem="btu-h3-qRE" secondAttribute="bottom" id="3Uh-O5-HsM"/>
-                            <constraint firstItem="0LP-so-9In" firstAttribute="leading" secondItem="HvN-z2-4bl" secondAttribute="leadingMargin" constant="-6" id="EOp-LI-L3t"/>
-                            <constraint firstItem="vDv-CF-IEJ" firstAttribute="top" secondItem="0LP-so-9In" secondAttribute="bottom" id="aYx-rM-gei"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="0LP-so-9In" secondAttribute="trailing" constant="-6" id="tOb-fL-D9n"/>
+                            <constraint firstItem="0LP-so-9In" firstAttribute="centerY" secondItem="HvN-z2-4bl" secondAttribute="centerY" id="3n1-v0-ICU"/>
+                            <constraint firstItem="0LP-so-9In" firstAttribute="width" secondItem="HvN-z2-4bl" secondAttribute="width" id="QaG-Qc-pQ5"/>
+                            <constraint firstItem="0LP-so-9In" firstAttribute="height" secondItem="HvN-z2-4bl" secondAttribute="height" id="ZlX-rm-uWY"/>
+                            <constraint firstItem="0LP-so-9In" firstAttribute="centerX" secondItem="HvN-z2-4bl" secondAttribute="centerX" id="eyx-AU-f3d"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="YZb-eZ-IQq"/>

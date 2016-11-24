@@ -28,7 +28,7 @@ class ProductListCollectionViewFlowLayout: UICollectionViewFlowLayout {
     func configure() {
         minimumLineSpacing = cellMargin
         minimumInteritemSpacing = cellMargin
-        sectionInset = UIEdgeInsets(top: cellMargin, left: 0, bottom: cellMargin, right: 0)
+        sectionInset = UIEdgeInsets(top: cellMargin, left: cellMargin, bottom: cellMargin, right: cellMargin)
         itemSize = cellSize
     }
 

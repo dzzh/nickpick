@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045D20C2AD2763F95EE1D7A8 /* Pods_nickpickTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40D6F062C450123B2F9585C /* Pods_nickpickTests.framework */; };
+		4A9F9031E9F57D5905B919A6 /* ProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9F96727F38103FADD6F732 /* ProductTests.swift */; };
 		4A9F982A330E6B6840C35958 /* ProductDescriptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9F95BA5DF5DD690C5DE088 /* ProductDescriptionViewModel.swift */; };
-		4A9F9846E4F6FDD36E7D6B6B /* CurrencyConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9F91090739817A937B89BC /* CurrencyConverter.swift */; };
+		4A9F9AB85178371564C2F233 /* FoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9F9AD5742D579E5ED1F691 /* FoundationExtensions.swift */; };
+		4A9F9B02051C998DAF66BF38 /* FoundationExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9F920E9138943C5EA15C4E /* FoundationExtensionsTests.swift */; };
+		4A9F9D39CF6FC06E0524C6F3 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5082421DE6203900CAD295 /* Product.swift */; };
+		4A9F9E40CA9AE3F67E655B9F /* FoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9F9AD5742D579E5ED1F691 /* FoundationExtensions.swift */; };
 		AE5082051DE5F50400CAD295 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5082041DE5F50400CAD295 /* AppDelegate.swift */; };
 		AE50820A1DE5F50400CAD295 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE5082081DE5F50400CAD295 /* Main.storyboard */; };
 		AE50820C1DE5F50400CAD295 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE50820B1DE5F50400CAD295 /* Assets.xcassets */; };
 		AE50820F1DE5F50400CAD295 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE50820D1DE5F50400CAD295 /* LaunchScreen.storyboard */; };
-		AE50821A1DE5F50400CAD295 /* nickpickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5082191DE5F50400CAD295 /* nickpickTests.swift */; };
 		AE5082251DE5F50400CAD295 /* nickpickUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5082241DE5F50400CAD295 /* nickpickUITests.swift */; };
 		AE5082351DE611EE00CAD295 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5082341DE611EE00CAD295 /* ProductListViewController.swift */; };
 		AE5082371DE6121600CAD295 /* ProductDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5082361DE6121600CAD295 /* ProductDescriptionViewController.swift */; };
@@ -46,10 +50,14 @@
 
 /* Begin PBXFileReference section */
 		4752ACB354C93D559D232661 /* Pods-nickpick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nickpick.release.xcconfig"; path = "Pods/Target Support Files/Pods-nickpick/Pods-nickpick.release.xcconfig"; sourceTree = "<group>"; };
-		4A9F91090739817A937B89BC /* CurrencyConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyConverter.swift; sourceTree = "<group>"; };
+		4A9F920E9138943C5EA15C4E /* FoundationExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundationExtensionsTests.swift; sourceTree = "<group>"; };
 		4A9F95BA5DF5DD690C5DE088 /* ProductDescriptionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductDescriptionViewModel.swift; path = "Product description/ProductDescriptionViewModel.swift"; sourceTree = "<group>"; };
+		4A9F96727F38103FADD6F732 /* ProductTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTests.swift; sourceTree = "<group>"; };
+		4A9F9AD5742D579E5ED1F691 /* FoundationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundationExtensions.swift; sourceTree = "<group>"; };
+		5294281EF84F1C19519AA5C1 /* Pods-nickpickTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nickpickTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nickpickTests/Pods-nickpickTests.debug.xcconfig"; sourceTree = "<group>"; };
 		585CCB19EF6851585958EAAC /* Pods-nickpick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nickpick.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nickpick/Pods-nickpick.debug.xcconfig"; sourceTree = "<group>"; };
 		5F4307F9069749F9764CADB6 /* Pods_nickpick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nickpick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A231E2D16225DAABD3D8771B /* Pods-nickpickTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nickpickTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-nickpickTests/Pods-nickpickTests.release.xcconfig"; sourceTree = "<group>"; };
 		AE5082011DE5F50400CAD295 /* nickpick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nickpick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5082041DE5F50400CAD295 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE5082091DE5F50400CAD295 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -57,7 +65,6 @@
 		AE50820E1DE5F50400CAD295 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE5082101DE5F50400CAD295 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE5082151DE5F50400CAD295 /* nickpickTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nickpickTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE5082191DE5F50400CAD295 /* nickpickTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nickpickTests.swift; sourceTree = "<group>"; };
 		AE50821B1DE5F50400CAD295 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE5082201DE5F50400CAD295 /* nickpickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nickpickUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5082241DE5F50400CAD295 /* nickpickUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nickpickUITests.swift; sourceTree = "<group>"; };
@@ -71,6 +78,7 @@
 		AE5082421DE6203900CAD295 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Product.swift; path = Model/Product.swift; sourceTree = "<group>"; };
 		AE5082451DE62D6100CAD295 /* ProductService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductService.swift; path = Service/ProductService.swift; sourceTree = "<group>"; };
 		AE5082471DE63FDA00CAD295 /* ProductListCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductListCollectionViewFlowLayout.swift; path = "Product list/ProductListCollectionViewFlowLayout.swift"; sourceTree = "<group>"; };
+		D40D6F062C450123B2F9585C /* Pods_nickpickTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nickpickTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045D20C2AD2763F95EE1D7A8 /* Pods_nickpickTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				5F4307F9069749F9764CADB6 /* Pods_nickpick.framework */,
+				D40D6F062C450123B2F9585C /* Pods_nickpickTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,6 +122,8 @@
 			children = (
 				585CCB19EF6851585958EAAC /* Pods-nickpick.debug.xcconfig */,
 				4752ACB354C93D559D232661 /* Pods-nickpick.release.xcconfig */,
+				5294281EF84F1C19519AA5C1 /* Pods-nickpickTests.debug.xcconfig */,
+				A231E2D16225DAABD3D8771B /* Pods-nickpickTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -158,8 +170,9 @@
 		AE5082181DE5F50400CAD295 /* nickpickTests */ = {
 			isa = PBXGroup;
 			children = (
-				AE5082191DE5F50400CAD295 /* nickpickTests.swift */,
 				AE50821B1DE5F50400CAD295 /* Info.plist */,
+				4A9F920E9138943C5EA15C4E /* FoundationExtensionsTests.swift */,
+				4A9F96727F38103FADD6F732 /* ProductTests.swift */,
 			);
 			path = nickpickTests;
 			sourceTree = "<group>";
@@ -198,7 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				AE5082391DE6184A00CAD295 /* Stylesheet.swift */,
-				4A9F91090739817A937B89BC /* CurrencyConverter.swift */,
+				4A9F9AD5742D579E5ED1F691 /* FoundationExtensions.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -246,9 +259,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE50822C1DE5F50400CAD295 /* Build configuration list for PBXNativeTarget "nickpickTests" */;
 			buildPhases = (
+				51B9B37DF6FA914DEDEEB7D3 /* [CP] Check Pods Manifest.lock */,
 				AE5082111DE5F50400CAD295 /* Sources */,
 				AE5082121DE5F50400CAD295 /* Frameworks */,
 				AE5082131DE5F50400CAD295 /* Resources */,
+				E1EC442335B9E98F57ACF9CD /* [CP] Embed Pods Frameworks */,
+				6C3EA97DEEA38E4D487DD9C4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -354,6 +370,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		51B9B37DF6FA914DEDEEB7D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6C3EA97DEEA38E4D487DD9C4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nickpickTests/Pods-nickpickTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7D1484F745798696E57E4EB3 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -382,6 +428,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nickpick/Pods-nickpick-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1EC442335B9E98F57ACF9CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nickpickTests/Pods-nickpickTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E952960537CA0BFD22D002DB /* [CP] Check Pods Manifest.lock */ = {
@@ -416,7 +477,7 @@
 				AE5082051DE5F50400CAD295 /* AppDelegate.swift in Sources */,
 				AE5082431DE6203900CAD295 /* Product.swift in Sources */,
 				4A9F982A330E6B6840C35958 /* ProductDescriptionViewModel.swift in Sources */,
-				4A9F9846E4F6FDD36E7D6B6B /* CurrencyConverter.swift in Sources */,
+				4A9F9E40CA9AE3F67E655B9F /* FoundationExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,7 +485,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE50821A1DE5F50400CAD295 /* nickpickTests.swift in Sources */,
+				4A9F9B02051C998DAF66BF38 /* FoundationExtensionsTests.swift in Sources */,
+				4A9F9AB85178371564C2F233 /* FoundationExtensions.swift in Sources */,
+				4A9F9031E9F57D5905B919A6 /* ProductTests.swift in Sources */,
+				4A9F9D39CF6FC06E0524C6F3 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -594,8 +658,8 @@
 		};
 		AE50822D1DE5F50400CAD295 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5294281EF84F1C19519AA5C1 /* Pods-nickpickTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = nickpickTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -608,8 +672,8 @@
 		};
 		AE50822E1DE5F50400CAD295 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A231E2D16225DAABD3D8771B /* Pods-nickpickTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = nickpickTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -623,7 +687,6 @@
 		AE5082301DE5F50400CAD295 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = nickpickUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.zmicier.nickpickUITests;
@@ -636,7 +699,6 @@
 		AE5082311DE5F50400CAD295 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = nickpickUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.zmicier.nickpickUITests;

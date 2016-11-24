@@ -8,7 +8,11 @@ target 'nickpick' do
     pod 'Kingfisher', '~> 3.2.1'
     pod 'Moya', '8.0.0-beta.4'
     pod 'Moya/ReactiveCocoa'
-    pod 'SwiftyJSON', '~> 3.1.3'
+    pod 'SwiftyJSON'
     pod 'ReactiveSwift', '1.0.0-alpha.3'
+end
+
+target 'nickpickTests' do
+    pod 'SwiftyJSON'
 end
 

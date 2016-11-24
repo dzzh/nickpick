@@ -55,7 +55,7 @@ class ProductDescriptionViewController: UIViewController {
 
             self.title = product.name
             self.titleLabel.text = product.name
-            self.priceLabel.text = CurrencyConverter.format(price: product.priceInCents)
+            self.priceLabel.text = product.priceInCents.asPriceInEuroCents()
             self.descriptionText.text = product.description
         }
     }

@@ -29,7 +29,7 @@ class ProductListCollectionViewCell: UICollectionViewCell {
                     options: [.transition(.fade(0.2))])
         }
         title.text = product.name
-        price.text = CurrencyConverter.format(price: product.priceInCents)
+        price.text = product.priceInCents.asPriceInEuroCents()
     }
 
     // MARK: Private (Helpers)

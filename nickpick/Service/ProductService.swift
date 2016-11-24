@@ -7,33 +7,53 @@
 //
 
 import Foundation
+import Moya
+import ReactiveSwift
 import UIKit.UIImage
 
-class ProductService {
+enum ProductService {
+    case list
+    case details(id: Int)
+}
 
-    let endpoint: String
+extension ProductService: TargetType {
+    // TODO resolve URL dynamically to be able e.g. to switch to staging environment
+    var baseURL: URL { return URL(string: "https://s3-eu-west-1.amazonaws.com/developer-application-test/cart")! }
 
-    init() {
-        endpoint = ProductService.endpointString()
+    var path: String {
+        switch self {
+            case .list:
+                return "/list"
+            case .details(let id):
+                return "/\(id)/detail"
+        }
     }
 
-    func list() -> [Product] {
-        var result = [Product]()
-        result.append(Product(id: 1, name: "First", description: "", imageUrl: "1.png", priceInCents: 100))
-        result.append(Product(id: 2, name: "Second", description: "", imageUrl: "2.png", priceInCents: 299))
-        result.append(Product(id: 3, name: "Third", description: "", imageUrl: "3.png", priceInCents: 21))
-        return result
+    var method: Moya.Method {
+        return .get
     }
 
-    func product(id: Int) -> Product? {
-        return Product(id: 1, name: "First", description: "First description", imageUrl: "1.png", priceInCents: 100)
+    var parameters: [String: Any]? {
+        return nil
     }
 
-    // MARK: Private (Helpers)
+    //TODO implement
+    var sampleData: Data {
+        switch self {
+            case .list:
+                return "{}".utf8EncodedData
+            case .details(let id):
+                return "{}".utf8EncodedData
+        }
+    }
 
-    private static func endpointString() -> String {
-        guard let dict = Bundle.main.infoDictionary else { return "" }
-        guard let value = dict["RestServiceEndpoint"] as? String else { return "" }
-        return value
+    var task: Task {
+        return .request
+    }
+}
+
+private extension String {
+    var utf8EncodedData: Data {
+        return self.data(using: .utf8)!
     }
 }

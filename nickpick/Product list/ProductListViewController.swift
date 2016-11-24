@@ -8,6 +8,8 @@
 
 import UIKit
 
+//TODO loading, empty and error states
+//TODO pull-to-refresh
 class ProductListViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
@@ -19,11 +21,13 @@ class ProductListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        viewModel = ProductListViewModel(productService: ProductService())
-        viewModel!.updateProducts()
+        viewModel = ProductListViewModel()
+        viewModel!.fetchProducts()
 
         configureCollectionView()
         configureAppearance()
+
+        bindViewModel()
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -38,6 +42,14 @@ class ProductListViewController: UIViewController {
         }
     }
 
+
+    // MARK: Private (View mode binding)
+
+    private func bindViewModel() {
+        viewModel!.products.producer.startWithValues { _ in
+            self.collectionView.reloadData()
+        }
+    }
 
     // MARK: Private (Collection view helpers)
 
@@ -64,12 +76,9 @@ extension ProductListViewController: UICollectionViewDelegate {
 
     func collectionView(_ collectionView: UICollectionView,
                         didSelectItemAt indexPath: IndexPath) {
-        if let product = viewModel!.product(id: indexPath.row) {
+        if let product = viewModel!.product(index: indexPath.row) {
             performSegue(withIdentifier: "ProductDescriptionSegue", sender: product)
         }
     }
-}
-
-extension ProductListViewController: UICollectionViewDelegateFlowLayout {
 
 }

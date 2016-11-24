@@ -12,9 +12,10 @@ import ReactiveSwift
 import UIKit
 
 
-//TODO custom back button
-//TODO multiline title
-//TODO set text view offset to 0 when loading, keep it when changing orientation
+// TODO custom back button
+// TODO multiline title
+// TODO set text view offset to 0 when loading, keep it when changing orientation
+// TODO pull-to-refresh
 class ProductDescriptionViewController: UIViewController {
 
     @IBOutlet weak var image: UIImageView!

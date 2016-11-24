@@ -8,11 +8,12 @@
 
 import UIKit
 
-//TODO loading, empty and error states
 //TODO pull-to-refresh
 class ProductListViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var edgeCaseView: UIView!
+    @IBOutlet weak var whoopsLabel: UILabel!
     
     fileprivate var viewModel: ProductListViewModel?
 
@@ -49,6 +50,40 @@ class ProductListViewController: UIViewController {
         viewModel!.products.producer.startWithValues { _ in
             self.collectionView.reloadData()
         }
+
+        viewModel!.state.producer.startWithValues { state in
+
+            switch state {
+                case .empty:
+                    self.whoopsLabel.text = "No data"
+                case .loading:
+                    self.whoopsLabel.text = "Loading..."
+                case .error:
+                    self.whoopsLabel.text = "Whoops"
+                default:
+                    break
+            }
+
+            func showCollection() {
+                self.collectionView.alpha = 1.0
+                self.edgeCaseView.alpha = 0.0
+            }
+
+            func showEdgeCase() {
+                self.collectionView.alpha = 0.0
+                self.edgeCaseView.alpha = 1.0
+            }
+
+            var animation = showCollection
+            switch state {
+                case .normal:
+                    break
+                default:
+                    animation = showEdgeCase
+            }
+
+            UIView.animate(withDuration: 0.3, animations: animation)
+        }
     }
 
     // MARK: Private (Collection view helpers)
@@ -67,7 +102,7 @@ class ProductListViewController: UIViewController {
     // MARK: Private (Appearance)
 
     private func configureAppearance() {
-        self.title = "Product list" // TODO localization
+        self.title = "Product list" // TODO localize all strings
 
         // would be better to move this in UINavigationController subclass,
         // but for this small app it's ok like this

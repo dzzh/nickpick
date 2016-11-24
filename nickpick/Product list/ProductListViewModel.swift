@@ -14,27 +14,37 @@ import UIKit.UICollectionView
 
 let productListCellId = "ProductCell"
 
+enum ProductListState {
+    case normal
+    case empty
+    case loading
+    case error
+}
+
 class ProductListViewModel: NSObject {
 
     let productProvider = MoyaProvider<ProductService>()
     var products = MutableProperty<[Product]>([])
+    var state: MutableProperty<ProductListState> = MutableProperty<ProductListState>(.empty)
 
     //TODO results caching
     func fetchProducts() {
+        state.value = .loading
         productProvider.request(.list) { result in
             switch result {
                 case let .success(moyaResponse):
                     if moyaResponse.statusCode == 200 { //TODO better status code filtering
                         if let productList = self.parseProducts(from: moyaResponse.data) {
                             self.products.value = productList
+                            self.state.value = productList.count > 0 ? .normal : .empty
                         } else {
-                            // TODO error handling
+                            self.toErrorState()
                         }
                     } else {
-                        // TODO error handling
+                        self.toErrorState()
                     }
                 case .failure(_):
-                    break // TODO error handling
+                    self.toErrorState()
             }
         }
     }
@@ -63,6 +73,13 @@ class ProductListViewModel: NSObject {
         }
 
         return result
+    }
+
+    // MARK: Private (State helpers)
+
+    private func toErrorState() {
+        products.value = []
+        state.value = .error
     }
 }
 

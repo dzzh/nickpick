@@ -24,7 +24,7 @@ class ProductListCollectionViewCell: UICollectionViewCell {
     func update(with product: Product) {
 //        image.image = product.image
         title.text = product.name
-        price.text = formattedPrice(from: product.priceInCents)
+        price.text = CurrencyConverter.format(price: product.priceInCents)
     }
 
     // MARK: Private (Helpers)
@@ -33,10 +33,5 @@ class ProductListCollectionViewCell: UICollectionViewCell {
         image.image = UIImage(named: "empty_product")
         title.text = "loading"
         price.text = ""
-    }
-
-    // TODO helper class for currency conversion and localization
-    private func formattedPrice(from priceInCents: Int) -> String {
-        return String(format: "€%.2f", Double(priceInCents) / 100.0)
     }
 }

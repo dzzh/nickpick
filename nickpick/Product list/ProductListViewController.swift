@@ -26,6 +26,19 @@ class ProductListViewController: UIViewController {
         configureAppearance()
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+
+        if segue.identifier == "ProductDescriptionSegue" {
+            let descriptionController = segue.destination as! ProductDescriptionViewController
+            if let product = sender as? Product {
+                let vm = ProductDescriptionViewModel(product: product)
+                descriptionController.viewModel = vm
+            }
+        }
+    }
+
+
     // MARK: Private (Collection view helpers)
 
     private func configureCollectionView() {
@@ -51,7 +64,9 @@ extension ProductListViewController: UICollectionViewDelegate {
 
     func collectionView(_ collectionView: UICollectionView,
                         didSelectItemAt indexPath: IndexPath) {
-
+        if let product = viewModel!.product(id: indexPath.row) {
+            performSegue(withIdentifier: "ProductDescriptionSegue", sender: product)
+        }
     }
 }
 

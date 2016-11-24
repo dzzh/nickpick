@@ -8,6 +8,7 @@
 
 import UIKit
 
+//TODO different cell size for landscape orientation
 class ProductListCollectionViewFlowLayout: UICollectionViewFlowLayout {
 
     let cellMargin: CGFloat = 10.0

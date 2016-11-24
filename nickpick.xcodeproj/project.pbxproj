@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A9F982A330E6B6840C35958 /* ProductDescriptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9F95BA5DF5DD690C5DE088 /* ProductDescriptionViewModel.swift */; };
+		4A9F9846E4F6FDD36E7D6B6B /* CurrencyConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9F91090739817A937B89BC /* CurrencyConverter.swift */; };
 		AE5082051DE5F50400CAD295 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5082041DE5F50400CAD295 /* AppDelegate.swift */; };
 		AE50820A1DE5F50400CAD295 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE5082081DE5F50400CAD295 /* Main.storyboard */; };
 		AE50820C1DE5F50400CAD295 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE50820B1DE5F50400CAD295 /* Assets.xcassets */; };
@@ -44,6 +46,8 @@
 
 /* Begin PBXFileReference section */
 		4752ACB354C93D559D232661 /* Pods-nickpick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nickpick.release.xcconfig"; path = "Pods/Target Support Files/Pods-nickpick/Pods-nickpick.release.xcconfig"; sourceTree = "<group>"; };
+		4A9F91090739817A937B89BC /* CurrencyConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyConverter.swift; sourceTree = "<group>"; };
+		4A9F95BA5DF5DD690C5DE088 /* ProductDescriptionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductDescriptionViewModel.swift; path = "Product description/ProductDescriptionViewModel.swift"; sourceTree = "<group>"; };
 		585CCB19EF6851585958EAAC /* Pods-nickpick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nickpick.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nickpick/Pods-nickpick.debug.xcconfig"; sourceTree = "<group>"; };
 		5F4307F9069749F9764CADB6 /* Pods_nickpick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nickpick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5082011DE5F50400CAD295 /* nickpick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nickpick.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -185,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				AE5082361DE6121600CAD295 /* ProductDescriptionViewController.swift */,
+				4A9F95BA5DF5DD690C5DE088 /* ProductDescriptionViewModel.swift */,
 			);
 			name = "Product description";
 			sourceTree = "<group>";
@@ -193,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				AE5082391DE6184A00CAD295 /* Stylesheet.swift */,
+				4A9F91090739817A937B89BC /* CurrencyConverter.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -409,6 +415,8 @@
 				AE50823F1DE61F7200CAD295 /* ProductListCollectionViewCell.swift in Sources */,
 				AE5082051DE5F50400CAD295 /* AppDelegate.swift in Sources */,
 				AE5082431DE6203900CAD295 /* Product.swift in Sources */,
+				4A9F982A330E6B6840C35958 /* ProductDescriptionViewModel.swift in Sources */,
+				4A9F9846E4F6FDD36E7D6B6B /* CurrencyConverter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

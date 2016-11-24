@@ -14,3 +14,8 @@ Technology stack
 - ReactiveSwift
 - SwiftyJSON
 
+Screenshots
+---
+![Product list](screenshots/product_list.png)
+
+![Product description](screenshots/product_description.png)

@@ -48,6 +48,12 @@ class ProductDescriptionViewController: UIViewController {
 
         viewModel.product.producer
                  .startWithValues { product in
+            if let url = product.imageUrl {
+                let placeholder = UIImage(named: "empty_product")
+                self.image.kf.setImage(with: url, placeholder: placeholder,
+                        options: [.transition(.fade(0.2))])
+            }
+
             self.title = product.name
             self.titleLabel.text = product.name
             self.priceLabel.text = CurrencyConverter.format(price: product.priceInCents)

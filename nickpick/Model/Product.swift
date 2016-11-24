@@ -14,8 +14,12 @@ struct Product {
     let id: Int
     let name: String
     let description: String
-    let imageUrl: String
+    let imageUrlString: String
     let priceInCents: Int
+
+    var imageUrl: URL? { get {
+        return URL(string: imageUrlString)
+    }}
 }
 
 extension Product {
@@ -24,10 +28,11 @@ extension Product {
            let id = Int(idString),
            let name = json["name"].string,
            let price = json["price"].int,
-           let imageUrl = json["image"].string {
+           let imageUrlString = json["image"].string {
 
             let description = json["description"].stringValue
-            return Product(id: id, name: name, description: description, imageUrl: imageUrl, priceInCents: price)
+            return Product(id: id, name: name, description: description,
+                imageUrlString: imageUrlString, priceInCents: price)
         } else {
             return nil
         }

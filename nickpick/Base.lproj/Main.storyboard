@@ -113,7 +113,7 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_product" translatesAutoresizingMaskIntoConstraints="NO" id="hca-NU-ZYc" userLabel="image">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_product" translatesAutoresizingMaskIntoConstraints="NO" id="hca-NU-ZYc" userLabel="image">
                                 <rect key="frame" x="36" y="20" width="303" height="303"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="hca-NU-ZYc" secondAttribute="height" id="ruC-gG-xxc"/>
@@ -178,22 +178,22 @@
                                 <exclude reference="2DO-ja-8vn"/>
                                 <exclude reference="GYh-OD-iuj"/>
                                 <exclude reference="T0x-U6-1wx"/>
-                                <exclude reference="njQ-i9-TMN"/>
                                 <exclude reference="8Y9-cN-iCX"/>
                                 <exclude reference="Aa7-u7-xHg"/>
                                 <exclude reference="Lb0-cs-8m5"/>
                                 <exclude reference="PyE-dE-75C"/>
                                 <exclude reference="dg7-U4-Rex"/>
                                 <exclude reference="smW-aT-XR1"/>
+                                <exclude reference="njQ-i9-TMN"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=compact">
                             <mask key="constraints">
                                 <include reference="GYh-OD-iuj"/>
-                                <include reference="njQ-i9-TMN"/>
                                 <include reference="8Y9-cN-iCX"/>
                                 <include reference="Lb0-cs-8m5"/>
                                 <include reference="PyE-dE-75C"/>
+                                <include reference="njQ-i9-TMN"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">

@@ -6,6 +6,7 @@
 //  Copyright © 2016 Zmicier. All rights reserved.
 //
 
+import Kingfisher
 import UIKit
 
 class ProductListCollectionViewCell: UICollectionViewCell {
@@ -22,7 +23,11 @@ class ProductListCollectionViewCell: UICollectionViewCell {
     }
 
     func update(with product: Product) {
-//        image.image = product.image
+        if let url = product.imageUrl {
+            let placeholder = UIImage(named: "empty_product")
+            image.kf.setImage(with: url, placeholder: placeholder,
+                    options: [.transition(.fade(0.2))])
+        }
         title.text = product.name
         price.text = CurrencyConverter.format(price: product.priceInCents)
     }

@@ -68,6 +68,11 @@ class ProductListViewController: UIViewController {
 
     private func configureAppearance() {
         self.title = "Product list" // TODO localization
+
+        // would be better to move this in UINavigationController subclass,
+        // but for this small app it's ok like this
+        self.navigationItem.backBarButtonItem =
+                UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
 
 }

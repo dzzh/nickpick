@@ -42,7 +42,7 @@ extension ProductService: TargetType {
         switch self {
             case .list:
                 return "{}".utf8EncodedData
-            case .details(let id):
+            case .details:
                 return "{}".utf8EncodedData
         }
     }
